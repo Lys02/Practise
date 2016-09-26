@@ -10,7 +10,7 @@ var Sample=mongoose.model('Sample',sampleSchema);
 
 module.exports = function(app){
 
-app.get('/sample',function(req,res){
+app.get('/',function(req,res){
 Sample.find({},function(err,data)
 {
   if(err)throw err;
@@ -18,7 +18,7 @@ Sample.find({},function(err,data)
 });
 });
 
-app.post('/sample',urlencodedParser,function(req,res){
+app.post('/',urlencodedParser,function(req,res){
 var newString=Sample(req.body).save(function(err,data){
   if(err)throw err;
   res.json(data);

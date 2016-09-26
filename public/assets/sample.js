@@ -7,7 +7,7 @@ $('form').on('submit',function(){
 
 $.ajax({
   type:'POST',
-  url:'/sample',
+  url:'/',
   data:sample,
   success:function(data){
     location.reload();
