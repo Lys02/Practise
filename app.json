@@ -1,0 +1,6 @@
+{
+  "name":"Sample App",
+  "description":"A test app created in Express",
+  "repository":"https://github.com/Lys02/Practise.git",
+  "keywords":["test","sample","strings"]
+}
